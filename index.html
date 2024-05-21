@@ -383,7 +383,7 @@
                            <div class="card-plan-item-button-wrapper">
                               <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
                               <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                                 <div id="3DaysPurchaseButton" class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
                               </div>
                               <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
                            </div>
@@ -730,6 +730,22 @@ We encourage you to take full advantage of the opportunities our customer suppor
    };
 
    document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Functionality for purchase buttons
+    var DDay = document.getElementById("3DaysPurchaseButton");
+    var lifetimeBtn = document.getElementById("lifetimePurchaseButton");
+
+    DDayBtn.onclick = function(event) {
+        event.preventDefault();
+        window.location.href = 'https://buy.stripe.com/9AQ151eNl08FarKaEI';
+    };
+
+    lifetimeBtn.onclick = function(event) {
+        event.preventDefault();
+        window.location.href = 'https://buy.stripe.com/bIYdRNfRp3kRgQ8149';
+    };
+        
     const discountText = document.getElementById('discountText');
     const discountContainer = document.getElementById('discountContainer');
     const discountCodeInput = document.getElementById('discountCode');
