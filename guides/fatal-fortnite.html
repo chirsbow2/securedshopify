@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatal Fortnite Setup Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #4ecdc4;
+        }
+        h2 {
+            color: #bbbbbb;
+        }
+        section {
+            background-color: #252525;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        p, li {
+            font-size: 18px;
+        }
+        ul, ol {
+            margin: 10px 0;
+        }
+        a {
+            color: #4ecdc4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            color: #bbbbbb;
+            background-color: #202020;
+        }
+        .usb-thumb-drive {
+            display: flex;
+            align-items: center;
+        }
+        .usb-thumb-drive img {
+            margin-right: 10px;
+        }
+        .red-bold {
+            color: red; /* Sets the color of the text to red */
+            font-weight: bold; /* Makes the text bold */
+        }
+        .glow-text {
+            color: white;
+            animation: glow-animation 2s ease-in-out infinite;
+        }
+
+        .bright-title {
+            font-size: 24px;
+            color: #FFF;
+            text-shadow: 0 0 2px #FFF; /* Very subtle glow */
+        }
+
+        .product-list {
+            list-style: none; /* Removes default list styling */
+            padding: 0; /* Removes default padding */
+        }
+
+        .order-button {
+            display: block;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px #333;
+            transition: all 0.3s ease;
+            width: auto; /* Ensures button width is based on content */
+            margin: 20px auto 0; /* Centers the button horizontally */
+        }
+
+        .order-button:hover {
+            background-color: #333;
+        }
+
+        .order-button:active {
+            box-shadow: 0 2px #333;
+            transform: translateY(4px);
+        }
+
+        .glow-text {
+            color: white;
+            text-shadow: 0 0 10px #FFF;
+        }
+
+
+        @keyframes glow-animation {
+            0%, 100% {
+                text-shadow: 0 0 5px white, 0 0 10px white;
+            }
+            50% {
+                text-shadow: 0 0 7px white, 0 0 20px white;
+            }
+        }
+
+    </style>
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const specificKey = "Fatal-JDGsy2-GASDY2"; // Specify the specific key here
+    let userKey = prompt("Please enter your License Key so we can show you the setup guide properly:");
+    
+    if (userKey !== null) { // Check if the user entered a key or canceled the prompt
+        if (userKey.trim() === specificKey) { // Check if the entered key matches the specific key
+            // Replace placeholders in the document with the user's license key
+            const placeholderRegex = new RegExp('YOURKEY', 'g');
+            document.querySelectorAll('*').forEach(node => {
+                node.innerHTML = node.innerHTML.replace(placeholderRegex, userKey);
+            });
+        } else {
+            // Show an error message if the entered key is invalid
+            document.body.innerHTML = '<h1>Access Denied</h1><p><center>You must provide a valid License Key so we can show you the guide properly. You have received that License Key in your email if you purchased.</center></p>';
+        }
+    } else {
+        // Show a message if the user canceled the prompt
+        document.body.innerHTML = '<h1>Access Denied</h1><p><center>You must provide a valid License Key so we can show you the guide properly. You have received that License Key in your email if you purchased.</center></p>';
+    }
+});
+    </script>
+</head>
+<body>
+    <header>
+        
+    </header>
+    
+    <section>
+        <h2>Freshly Recoded Reminder</h2>
+        <section>Temporary guide: <a href="https://discord.gg/mwEA78qNGU">Fatal Guide</a></section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html data-wf-domain="darktemplate.webflow.io" data-wf-page="61113c4e9f23df42e2554109" data-wf-site="61113c4e9f23df1e7f554117" data-wf-status="1" lang="en" class="w-mod-js w-mod-ix wf-dmsans-n4-active wf-dmsans-n5-active wf-dmsans-n7-active wf-active w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-touch w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js w-mod-js"><script type="text/javascript" id="custom-useragent-string-page-script"></script><head><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script>        <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Custom scrollbar styles for WebKit browsers */
+        ::-webkit-scrollbar {
+            width: 10px; /* Width of the vertical scrollbar */
+            height: 10px; /* Height of the horizontal scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent; /* Transparent track */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(136, 136, 136, 0.5); /* Semi-transparent thumb */
+            border-radius: 5px; /* Rounded corners for the thumb */
+            transition: background 0.3s ease-in-out; /* Smooth transition for background */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(136, 136, 136, 0.7); /* Brighter thumb on hover */
+        }
+
+        /* Custom scrollbar styles for Firefox */
+        body {
+            scrollbar-color: rgba(136, 136, 136, 0.5) transparent; /* Semi-transparent thumb and transparent track */
+            scrollbar-width: thin; /* Scrollbar width (auto, thin, none) */
+        }
+    </style>
+
+<style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><style>
+    /* Center the images container and ensure a consistent layout */
+    .payment-logos {
+        text-align: center;
+        margin-top: 20px;
+        overflow: hidden; /* Prevent overflow from vertical movement */
+    }
+
+    .payment-logos-checkout {
+        text-align: center;
+        margin-top: 20px;
+        overflow: hidden; /* Prevent overflow from vertical movement */
+    }
+
+    .pointer-cursor {
+        cursor: pointer;
+    }
+
+    /* Style each image for uniformity and add animation */
+    .payment-logos img {
+        width: 60px; /* Adjust the size of the logos */
+        height: auto;
+        margin: 10px; /* Add some space around each logo */
+        vertical-align: middle; /* Align logos nicely */
+        animation: glideUpDown 3s ease-in-out infinite, fadeInOutGlow 2s linear infinite;
+        position: relative; /* Needed for animation */
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Subtle glow effect */
+    }
+    .payment-logos-checkout img {
+        width: 40px; /* Adjust the size of the logos */
+        height: auto;
+        margin: 10px; /* Add some space around each logo */
+        vertical-align: middle; /* Align logos nicely */
+        position: relative; /* Needed for animation */
+    }
+
+    /* Keyframes for vertical gliding */
+    @keyframes glideUpDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    /* Keyframes for glow effect */
+    @keyframes fadeInOutGlow {
+        0%, 100% {
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    /* Individual animation delays, simulating randomness */
+    .payment-logos img:nth-child(1) { animation-delay: 0.2s, 0.2s; }
+    .payment-logos img:nth-child(2) { animation-delay: 0.8s, 0.8s; }
+    .payment-logos img:nth-child(3) { animation-delay: 0.5s, 0.5s; }
+    .payment-logos img:nth-child(4) { animation-delay: 0.1s, 0.1s; }
+    .payment-logos img:nth-child(5) { animation-delay: 0.9s, 0.9s; }
+    .payment-logos img:nth-child(6) { animation-delay: 0.6s, 0.6s; }
+    .payment-logos img:nth-child(7) { animation-delay: 0.3s, 0.3s; }
+    .payment-logos img:nth-child(8) { animation-delay: 0.7s, 0.7s; }
+    .payment-logos img:nth-child(9) { animation-delay: 0.4s, 0.4s; }
+    .payment-logos img:nth-child(10) { animation-delay: 1s, 1s; }
+
+    .modal {
+            transition: opacity 0.3s ease-in-out;
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+        }
+
+        .modal-content {
+            background-color: #1d1a27;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #a99fff44;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .modal-content label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        #email {
+            width: 100%;
+            padding: 10px;
+            background-color: #1d1a27;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        #email:focus {
+            border-color: #a89fff;
+            box-shadow: 0 0 5px #a89fff;
+        }
+
+        #discountCode {
+            width: 100%;
+            padding: 10px 40px 10px 10px; 
+            background-color: #1d1a27;
+            border: 1px solid #333333;
+            border-radius: 5px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+         }
+
+         #discountCode:focus {
+            border-color: #a89fff;
+            box-shadow: 0 0 5px #a89fff;
+         }
+
+         #applyDiscount {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: white;
+         }
+
+        .card-plan-item-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+         }
+
+         .original-price {
+            text-decoration: line-through;
+            color: #777;
+            margin-right: 10px;
+            font-size: 18px;
+         }
+
+         .discounted-price {
+            color: #ff4500;
+            font-size: 24px;
+            position: relative;
+            animation: burningEffect 2s infinite;
+         }
+
+         @keyframes burningEffect {
+            0%, 100% {
+               text-shadow: 0 0 5px rgba(255, 69, 0, 0.8), 0 0 10px rgba(255, 69, 0, 0.6), 0 0 15px rgba(255, 69, 0, 0.4), 0 0 20px rgba(255, 69, 0, 0.2);
+            }
+            50% {
+               text-shadow: 0 0 10px rgba(255, 69, 0, 0.8), 0 0 20px rgba(255, 69, 0, 0.6), 0 0 30px rgba(255, 69, 0, 0.4), 0 0 40px rgba(255, 69, 0, 0.2);
+            }
+         }
+
+</style>
+
+        <style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><script type="text/javascript" id="custom-useragent-string-page-script"></script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style><title>Fortnite Cheats &amp; Hacks w/ Aimbot &amp; ESP (2024 UPDATED)</title>
+      <meta name="keywords" content="Fortnite cheats, Fortnite hacks, Fortnite aimbot, Fortnite esp, Fortnite wallhack, fortnite cheat, fortnite cheaters, fortnite cheat 2024, fortnite cheat download, fortnite free cheat, fortnite hack, cheat fortnite, fortnite hacks,fortnite esp,fortnite legit cheat,fortnite cheaters caught,fortnite legit cheating,fortnite cheat 2023, chapter 5,undetected fortnite cheat,best fortnite cheat,fortnite cheat free,fortnite softaim,fortnite softaim download,fortnite cheat tutorial,best fortnite cheat 2023,Fatal,hack,client,fortnite">
+      <meta content="Fortnite Cheats 🏆 Aimbot, ESP and more.. 🏆 Windows 10 &amp; 11 supported! Dominate your game with our unbeatable Fortnite Cheats!" property="description">
+      <meta content="Fortnite Cheats &amp; Hacks at Fatal for the best experience!" property="og:title">
+      <meta content="Fortnite Cheats 🏆 Aimbot, ESP and more.. 🏆 Windows 10 &amp; 11 supported! Dominate your game with our unbeatable Fortnite Cheats!" property="og:description">
+      <meta content="https://raw.githubusercontent.com/xgamer30/securedshopify/main/images/background.png" property="og:image">
+      <meta content="Fortnite Cheats &amp; Hacks at Fatal for the best experience!" property="twitter:title">
+      <meta property="og:site_name" content="FATALServices">
+      <meta property="og:locale" content="en_US">
+      <meta content="Fortnite Cheats 🏆 Aimbot, ESP and more.. 🏆 Windows 10 &amp; 11 supported! Dominate your game with our unbeatable Fortnite Cheats!" property="twitter:description">
+      <meta content="https://raw.githubusercontent.com/xgamer30/securedshopify/main/images/background.png" property="twitter:image">
+      <meta property="og:type" content="website">
+      <meta content="summary_large_image" name="twitter:card">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+       <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicon.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicon.png">
+      <meta content="width=device-width, initial-scale=1" name="viewport">
+      <meta name="description" content="Fatal Fortnite Cheats 🏆 Aimbot, ESP, Wallhack 🏆 Dominate your game with our premium Fortnite Cheats!">
+      <meta content="Webflow" name="generator"><link href="./files/darktemplate.webflow.20f9ab0c6.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/" rel="preconnect"><link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous"><script src="./files/webfont.js.Download" type="text/javascript"></script><link rel="stylesheet" href="./files/css" media="all"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:regular,500,700" media="all"><script type="text/javascript">WebFont.load({  google: {    families: ["DM Sans:regular,500,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><style>
+      .w-webflow-badge{
+      display:none !important;
+      }
+   </style><script type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = {"currencyCode":"USD","symbol":"$","decimal":".","fractionDigits":2,"group":",","template":"{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}","hideDecimalForWholeNumbers":false};</script></head>
+ <body class="bg-neutral-800">
+   <div style="opacity: 1;" class="page-wrapper">
+      <div data-collapse="medium" data-animation="over-left" data-duration="400" data-w-id="58db7844-5919-d71b-dd74-2323ed8dffe9" data-easing="ease" data-easing2="ease" role="banner" class="header w-nav" style="opacity: 1;">
+         <div class="container-default w-container">
+            <div class="header-wrapper">
+               <div class="split-content header-right"><a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="files/FatalLogo.png" alt="Dark X Webflow Template - Logo" class="header-logo"></a></div>
+               
+               <div class="split-content header-center"><nav role="navigation" class="nav-menu w-nav-menu" style=""><ul role="list" class="header-navigation w-list-unstyled"><li class="nav-item-wrapper"><a href="/discord" class="nav-link"><b>Discord</b></a></li><li class="nav-item-wrapper"><a href="https://www.youtube.com/@tazzlovezyou" class="nav-link">YouTube</a></li><li class="nav-item-wrapper"><a href="/terms" class="nav-link">Terms of Service</a></li><li class="nav-item-wrapper"><a href="/spoofer" class="nav-link">Our Spoofer</a></li><li class="nav-item-wrapper"><a href="/dma" class="nav-link">DMA Peripherals</a></li><li class="nav-item-wrapper mobile"><a href="/contact" class="nav-link sign-in mobile">Sign in</a></li><li class="nav-item-wrapper mobile-button"><div class="button-primary-gradient header-button mobile-button"><a href="#pricing-section" class="button-primary small-v2 mobile-button w-button">Get started</a></div></li></ul></nav></div><div class="split-content header-left">
+                  
+                  <div class="button-primary-gradient header-button"><a href="#pricing-section" class="button-primary small-v2 w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1.00036) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Dominate now..</a></div>
+                  <div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                     <div class="header-menu-button-icon-wrapper">
+                        <div class="icon-wrapper">
+                           <div class="header-menu-button-icon-top"></div>
+                           <div class="header-menu-button-icon-medium"></div>
+                           <div class="header-menu-button-icon-bottom"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+      <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div>
+      <section class="section home-hero">
+         <div class="container-medium-940px home-hero" style="padding-top: 50px">
+            <div data-w-id="448f5ead-3667-0bad-b1a4-a6038870800b" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="home-hero-featured-message-wrapper">
+               <div class="home-hero-featured-message-content">
+                  <a data-w-id="5747d66c-b4ac-690f-6026-662ab3648be2" href="#pricing-section" class="home-hero-featured-message-link w-inline-block">
+                     <div class="home-hero-featured-message-tag">New</div>
+                     <div class="home-hero-featured-message-text">New payment methods &amp; more</div>
+                     <div class="home-hero-featured-message-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                  </a>
+                  <div class="home-hero-featured-message-blur" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+               </div>
+            </div>
+            <h1 data-w-id="abc7287a-ad94-a3ec-8716-36750d55fc4e" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="display-1 home-hero"><span class="text-color-accent" style="font-size: 50px">Fortnite Cheats Offered by Fatal Cheats with ESP, Aimbot and more!
+</span></h1>
+            
+            
+<p data-w-id="749e645b-3b65-110f-471d-f6af6dfbc601" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="paragraph-large home-hero"><strong><u>BETTER THAN EVER</u> - Recoded Version is HERE!🎉</strong></p></div>
+         
+      
+<div class="container-default pricing w-container">
+           <div id="pricing-section" data-w-id="5b7b798c-3bee-f3c0-046b-659a4d9fefe2" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="pricing-collection-list-wrapper w-dyn-list">
+            <div role="list" class="pricing-wrapper w-dyn-items">
+               <div role="listitem" class="pricing-plan-item w-dyn-item purchase-now-button pointer-cursor">
+                  <div class="card-plan-item-popular-gradient-blur"></div>
+                  
+                  <a class="card plan-item w-inline-block">
+                     <div class="card-plan-item-content">
+                        <div class="card-plan-item-content-top">
+                           <div class="card-plan-item-icon-content">
+                           </div>
+                           <div class="card-plan-item-title-wrapper">
+                              <h2 class="title h3-size card-plan-item" translate="no">3 DAYS</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="card-plan-item-content-bottom">
+                           <div class="w-layout-grid card-plan-item-features-grid">
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">All standard features included</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Supports Windows 10 and 11</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Refunds possible (Check terms)</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Optional DMA Support (Soon!)</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Dedicated support</div>
+                              </div>
+                              
+                           </div>
+                           <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D" class="card-plan-item-price">€&nbsp;9.90&nbsp;EUR</div>
+                           <div class="card-plan-item-button-wrapper">
+                              <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
+                              <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                              </div>
+                              <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card plan-item-popular w-condition-invisible"></div>
+                  </a><div class="space card-plan-item-popular"></div><div class="space card-plan-item-popular w-condition-invisible"></div>
+               </div><div role="listitem" class="pricing-plan-item w-dyn-item purchase-now-button pointer-cursor">
+                  <div class="card-plan-item-popular-gradient-blur w-condition-invisible"></div>
+                  <a class="card plan-item w-inline-block">
+                     <div class="card-plan-item-content purchase-now-button">
+                        <div class="card-plan-item-popular-tag-wrapper">
+                           <div class="card-plan-item-popular-tag-blur-fire"></div>
+                           <div class="card-plan-item-popular-tag-text-trending">
+                               <span role="img" aria-label="flame">🔥</span> TRENDING 🔥
+                           </div>
+                       </div>                       
+                        <div class="card-plan-item-content-top">
+                           <div class="card-plan-item-title-wrapper">
+                              <h2 class="title h3-size card-plan-item" translate="no">1 WEEK</h2>
+                           </div>
+                        </div>
+                        <div class="card-plan-item-content-bottom">
+                           <div class="w-layout-grid card-plan-item-features-grid">
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">All standard features included</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Supports Windows 10 and 11</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Refunds possible (Check terms)</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Optional DMA Support (Soon!)</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Dedicated support</div>
+                              </div>
+                              
+                           </div>
+                           <div class="card-plan-item-price">
+                              <span class="original-price">€24.90</span>
+                              <span class="discounted-price">€14.90&nbsp;EUR</span>
+                          </div>
+                          <div class="countdown-timer" style="margin-top: -60px; margin-bottom: 30px;">
+                           🚨 SALE ENDS IN <span class="countdown"></span>
+                        </div>
+                           <div class="card-plan-item-button-wrapper">
+                              <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
+                              <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                              </div>
+                              <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card plan-item-popular w-condition-invisible"></div>
+                  </a>
+                  <div class="space card-plan-item-popular w-condition-invisible"></div>
+               </div>
+               <div role="listitem" class="pricing-plan-item w-dyn-item purchase-now-button pointer-cursor">
+                  <div class="card-plan-item-popular-gradient-blur w-condition-invisible"></div>
+                  <a class="card plan-item w-inline-block">
+                     <div class="card-plan-item-content">
+                        <div class="card-plan-item-content-top">
+                           
+                           <div class="card-plan-item-title-wrapper" style="margin-top: 25px;">
+                              <h2 class="title h3-size card-plan-item" translate="no">1 MONTH</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="card-plan-item-content-bottom">
+                           <div class="w-layout-grid card-plan-item-features-grid">
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">All standard features included</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Supports Windows 10 and 11</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Refunds possible (Check terms)</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Optional DMA Support (Soon!)</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"></div>
+                                 <div class="card-plan-item-feature-text">Dedicated support</div>
+                              </div>
+                              
+                           </div>
+                           <div class="card-plan-item-price">
+                              <span class="original-price">€39.90</span>
+                              <span class="discounted-price">€29.90&nbsp;EUR</span>
+                          </div>
+                          <div class="countdown-timer" style="margin-top: -60px; margin-bottom: 30px;">
+                           🚨 SALE ENDS IN <span class="countdown"></span>
+                        </div>
+                           <div class="card-plan-item-button-wrapper">
+                              <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
+                              <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                              </div>
+                              <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card plan-item-popular w-condition-invisible"></div>
+                  </a>
+                  <div class="space card-plan-item-popular w-condition-invisible"></div>
+               </div><div role="listitem" class="pricing-plan-item w-dyn-item purchase-now-button pointer-cursor">
+                  <div class="card-plan-item-popular-gradient-blur"></div>
+                  <a class="card plan-item w-inline-block">
+                     <div class="card-plan-item-content">
+                        <div class="card-plan-item-content-top">
+                           <div class="card-plan-item-icon-content">
+                              <div class="image-wrapper card-plan-item-icon"><img alt="Advanced" loading="eager" data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" src="https://cdn.fnzone.es/badge/17.png" class="image card-plan-item-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+                              <div class="card-plan-item-popular-tag-wrapper">
+                                 <div class="card-plan-item-popular-tag-blur"></div>
+                                 <div class="card-plan-item-popular-tag-text">BEST VALUE</div>
+                              </div>
+                           </div>
+                           <div class="card-plan-item-title-wrapper">
+                              <h2 class="title h3-size card-plan-item" translate="no">LIFETIME</h2>
+                              
+                           </div>
+                        </div>
+                        <div class="card-plan-item-content-bottom">
+                           <div class="w-layout-grid card-plan-item-features-grid">
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">Lifetime features unlocked</div>
+                              </div>
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">VDMA Setup (Soon!)</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">Triggerbot</div>
+                              </div>
+                              
+                              <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">Fast reload</div>
+                              </div><div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">No queue for /getloader</div>
+                              </div>
+                           <div class="card-plan-item-feature-wrapper">
+                                 <div class="card-plan-item-feature-icon-wrapper"><img src="./files/61168470a50c276dd3044699_icon-1-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon w-condition-invisible"><img src="./files/6116846ee75ed4540f279357_icon-2-check-dark-template.svg" loading="eager" alt="Check Icon - Dark X Webflow Template" class="image card-plan-item-feature-icon"></div>
+                                 <div class="card-plan-item-feature-text">Premium support &amp; discord role</div>
+                              </div></div>
+                              <div class="card-plan-item-price">
+                                 <span class="original-price">€109.90</span>
+                                 <span class="discounted-price">€99.90&nbsp;EUR</span>
+                             </div>
+                             <div class="countdown-timer" style="margin-top: -60px; margin-bottom: 30px;">
+                              🚨 SALE ENDS IN <span class="countdown"></span>
+                           </div>
+                           <div class="card-plan-item-button-wrapper">
+                              <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
+                              <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                              </div>
+                              <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                  </a>
+                  <div class="space card-plan-item-popular"></div>
+               </div>
+               
+            </div>
+           </div>
+           <div class="bg-gradient-blur-wrapper pricing" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(331.416deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+              <div class="bg-gradient-blur-circle-3 pink top"></div>
+              <div class="bg-gradient-blur-circle-2 purple"></div>
+              <div class="bg-gradient-blur-circle-1 purple"></div>
+           </div>
+        </div><div class="payment-logos" style="padding-top: 50px">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/visa.svg?sanitize=true" alt="Visa">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/mastercard.svg?sanitize=true" alt="Mastercard">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/american-express.svg?sanitize=true" alt="American Express">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/apple-pay.svg?sanitize=true" alt="Apple Pay">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/google-pay.svg?sanitize=true" alt="Google Pay">
+    
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/ideal.svg?sanitize=true" alt="iDEAL">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/giropay.svg?sanitize=true" alt="giropay">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/bancontact.svg?sanitize=true" alt="Bancontact">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/alipay.svg?sanitize=true" alt="Alipay">
+    <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/wechat-pay.svg?sanitize=true" alt="WeChat Pay">
+</div><div class="container-default home-hero w-container" style="padding-top: 200px">
+            <div data-w-id="1535d204-b8f5-78ad-1998-57322399a3bd" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="home-hero-images-wrapper"><iframe allow="autoplay; fullscreen" frameborder="0" style="width: 1024px; height: 576px; border-radius: 15px; box-shadow: 0 0 20px rgba(0,0,0,0.5);" src="https://www.youtube.com/embed/i7QPBBaPtuY?loop=1&autoplay=1"></iframe><img src="images/cashcup.png" loading="eager" alt="Fortnite Cheats Tournament Leaderboard" class="image home-hero-2" style="will-change: transform; transform: translate3d(0px, -29.985px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="images/tournament_ingame.jpg" loading="eager" alt="Fortnite Hacks Free Wins Undetected" class="image home-hero-3" style="will-change: transform; transform: translate3d(0px, -19.99px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"></div>
+            <div class="home-hero-companies-wrapper">
+               
+            </div>
+            <div data-w-id="a052a4bf-34f8-d790-1f5c-e2592094cb97" class="bg-gradient-blur-wrapper home-hero-1" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(331.416deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+               <div class="bg-gradient-blur-circle-3"></div>
+               <div class="bg-gradient-blur-circle-2"></div>
+               <div class="bg-gradient-blur-circle-1"></div>
+            </div>
+            <div class="bg-gradient-blur-wrapper home-hero-2" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(19.422deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+               <div class="bg-gradient-blur-circle-3"></div>
+               <div class="bg-gradient-blur-circle-2 blue"></div>
+               <div class="bg-gradient-blur-circle-1 purple"></div>
+            </div>
+         </div><p data-w-id="749e645b-3b65-110f-471d-f6af6dfbc601" style="text-align: center; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="paragraph-large home-hero"></p>
+</section>
+<section class="section testimonials">
+         <div data-w-id="fea83df0-5504-31c9-44dc-69bab21a637d" style="opacity: 1;" class="container-medium-603px testimonials">
+            <h2>What our clients say</h2>
+            
+         </div>
+         <div class="container-default testimonials w-container">
+            <div>
+               <div class="card testimonial w-slider-mask" id="w-slider-mask-0"><div class="testimonial-slide w-slide" aria-label="1 of 4" role="group" style="transform: translateX(0px); opacity: 1; z-index: 10; transition: opacity 0.25s ease 0s;">
+                        <div class="card-testimonial-wrapper">
+                            <div class="card-testimonial-content">
+                                <h3 class="title card-testimonial">Mystizal</h3>
+                                <p class="paragraph card-testimonial">everything works and makes me blast with cum
+                                </p>
+                            </div>
+                            <div class="image-wrapper card-testimonial"></div>
+                        </div>
+                    <img src="" alt="">
+</div><!-- New Testimonial Slide --><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div>
+                <div class="card testimonial w-slider-mask" id="w-slider-mask-0" style="margin-top: 50px;"><div class="testimonial-slide w-slide" aria-label="1 of 4" role="group" style="transform: translateX(0px); opacity: 1; z-index: 10; transition: opacity 0.25s ease 0s;"><div aria-hidden="true" style="transform: translateX(0px); opacity: 1; z-index: 10; transition: opacity 0.25s ease 0s;" role="group" aria-label="2 of 4" class="testimonial-slide w-slide">
+                        <div class="card-testimonial-wrapper" aria-hidden="true">
+                            <div class="card-testimonial-content" aria-hidden="true">
+                                <h3 class="title card-testimonial" aria-hidden="true">lopl</h3>
+                                <p class="paragraph card-testimonial" aria-hidden="true">perm spoofer so ud always works def a w cop ong yall should buy and thanks to fast support
+
+</p>
+                            </div>
+                            <div class="image-wrapper card-testimonial" aria-hidden="true"></div>
+                        </div>
+                    <img src="" alt="" aria-hidden="true"></div><!-- New Testimonial Slide --><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div></div><div class="card testimonial w-slider-mask" id="w-slider-mask-0" style="margin-top: 50px;"><div class="testimonial-slide w-slide" aria-label="3 of 4" role="group" style="transform: translateX(0px); opacity: 1; z-index: 10; transition: opacity 0.25s ease 0s;" aria-hidden="true">
+                        <div class="card-testimonial-wrapper" aria-hidden="true">
+                            <div class="card-testimonial-content" aria-hidden="true">
+                                <h3 class="title card-testimonial" aria-hidden="true">squ1sh</h3>
+                                <p class="paragraph card-testimonial" aria-hidden="true">temp, instant support and got discord on hot dial, Buy now.
+
+</p>
+                            </div>
+                            <div class="image-wrapper card-testimonial" aria-hidden="true"></div>
+                        </div>
+                    <img src="" alt="" aria-hidden="true"></div><!-- New Testimonial Slide --><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div><div class="card testimonial w-slider-mask" id="w-slider-mask-0" style="margin-top: 50px;"><div class="testimonial-slide w-slide" aria-label="4 of 4" role="group" style="transform: translateX(0px); opacity: 1; z-index: 10; transition: opacity 0.25s ease 0s;" aria-hidden="true">
+                        <div class="card-testimonial-wrapper" aria-hidden="true">
+                            <div class="card-testimonial-content" aria-hidden="true">
+                                <h3 class="title card-testimonial" aria-hidden="true">v0n0</h3>
+                                <p class="paragraph card-testimonial" aria-hidden="true">+rep temp took me a while to figure out what was wrong with it and it turned out it was just my anti virus but it all worked ive been playing all day without ban!
+
+</p>
+                            </div>
+                            <div class="image-wrapper card-testimonial" aria-hidden="true"></div>
+                        </div>
+                    <img src="" alt="" aria-hidden="true"></div><!-- New Testimonial Slide --><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore=""></div></div><div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore="">Slide 1 of 2.</div></div>
+               
+               
+               
+            </div>
+            <div class="bg-gradient-blur-wrapper big" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(317.16deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+               <div class="bg-gradient-blur-circle-3 pink big"></div>
+               <div class="bg-gradient-blur-circle-2 blue-2"></div>
+               <div class="bg-gradient-blur-circle-1 purple-2 big"></div>
+            </div>
+         </section></div>
+      <section class="section home-steps">
+         <div class="container-default w-container">
+            <div class="home-steps-wrapper">
+               <div class="split-content home-steps-left">
+                  <h2>Stop scrolling!</h2>
+                  <!-- <p class="paragraph home-steps"><span class="text-no-wrap">Aren't convinced yet?<br>Use code FATAL7849 for 30% off!</span></p> -->
+                  <div class="button-primary-gradient"><a href="#pricing-section" class="button-primary w-button" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1.00949) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</a></div>
+               </div>
+               <div class="split-content home-steps-right">
+                  <div class="w-layout-grid home-steps-grid">
+                     <div data-w-id="5ca80c16-ab7b-99c2-0c1a-a77b0e738a53" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="card home-step">
+                        <div class="card-home-step-content">
+                           <div class="title h3-size card-home-step-number">1</div>
+                           <h3 class="title card-home-step">Purchase from our website</h3>
+                           <p class="paragraph card-home-step">We accept a variety of payment methods, including all major credit and debit cards, bank transfers, and cryptocurrency.
+
+</p>
+                        </div>
+                        <div class="image-wrapper card-home-step"><img src="./files/61118b2e2fb8ecd99fce500c_image-1-home-steps-dark-template.jpg" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 40vw, (max-width: 1919px) 26vw, 318.1875px" srcset="https://assets-global.website-files.com/61113c4e9f23df1e7f554117/61118b2e2fb8ecd99fce500c_image-1-home-steps-dark-template-p-500.jpeg 500w, https://assets-global.website-files.com/61113c4e9f23df1e7f554117/61118b2e2fb8ecd99fce500c_image-1-home-steps-dark-template.jpg 646w" alt="Create Account - Dark X Webflow Template" class="image card-home-step"></div>
+                     </div>
+                     <div data-w-id="66be55b7-13bf-9864-46c3-3b493748a167" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="card home-step">
+                        <div class="card-home-step-content">
+                           <div class="title h3-size card-home-step-number">2</div>
+                           <h3 class="title card-home-step">Check your email</h3>
+                           <p class="paragraph card-home-step">Shortly after your purchase, you will receive an email that includes your License Key, a detailed Setup Guide, and an invitation to join our dedicated Customer Support Server, available 24/7 to assist you.
+
+</p>
+                        </div>
+                        <div class="image-wrapper card-home-step"><img src="./files/61118b2f246ebe2569f937fe_image-2-home-steps-dark-template.jpg" loading="eager" sizes="(max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 40vw, (max-width: 1919px) 26vw, 318.1875px" srcset="https://assets-global.website-files.com/61113c4e9f23df1e7f554117/61118b2f246ebe2569f937fe_image-2-home-steps-dark-template-p-500.jpeg 500w, https://assets-global.website-files.com/61113c4e9f23df1e7f554117/61118b2f246ebe2569f937fe_image-2-home-steps-dark-template.jpg 646w" alt="Customize Your Profile - Dark X Webflow Template" class="image card-home-step"></div>
+                     </div>
+                     <div data-w-id="75ac40fd-fea7-3586-f026-0097732d5527" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="card home-step">
+                        <div class="card-home-step-content">
+                           <div class="title h3-size card-home-step-number">3</div>
+                           <h3 class="title card-home-step">Enjoy!</h3>
+                           <p class="paragraph card-home-step">With Fatal, you are now equipped to enjoy gaming for leisure, participate in competitive wagers and tournaments for potential monetary rewards, and explore other exciting opportunities.</p>
+                        </div>
+                        
+                     </div>
+                  <div data-w-id="75ac40fd-fea7-3586-f026-0097732d5527" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;" class="card home-step">
+                        <div class="card-home-step-content">
+                           <div class="title h3-size card-home-step-number">?</div>
+                           <h3 class="title card-home-step">How does it work?</h3>
+                           <p class="paragraph card-home-step">Upon completion of your order, a series of valuable resources will be sent directly to your provided email address. These include your unique license key, which will allow you to activate and access your new software. Additionally, you will receive a comprehensive setup guide. This guide is meticulously designed to facilitate a smooth and straightforward installation process, ensuring that you can begin utilizing your product with minimal delay.
+<br><br>
+Furthermore, as part of our commitment to exceptional customer service, we extend an invitation to our exclusive customer support server. This platform is operational 24/7, ensuring that assistance is always just a message away, regardless of your time zone or the hour of the day. Our dedicated team of support professionals is readily available to address any queries or issues that may arise, providing solutions and guidance to enhance your experience with our product.
+<br><br>
+The benefits of joining our customer support server go beyond troubleshooting and technical assistance. The server also acts as a vibrant community hub where you can engage with other users who share your interests. It's a place where friendships are forged, experiences are shared, and knowledge is exchanged. Within this community, you can find fellow enthusiasts to discuss strategies, exchange tips, or simply chat about your day.
+<br><br>
+For those interested in the competitive aspects of gaming, our server offers a unique opportunity to connect with potential partners. Whether you’re looking to form a team, find a duo partner, or just get advice on how to improve your skills, the community is an invaluable resource. The collaborative atmosphere allows members to enhance their gaming techniques, strategize together, and potentially increase their competitive edge in online arenas.
+<br><br>
+Moreover, this server isn’t just for gamers. It's a comprehensive platform that caters to a broad spectrum of interests related to our product. Members can explore various topics in the general chat, participate in community events, get to know our Fortnite Cheats &amp;amp; Hacks w/ Aimbot &amp;amp; ESP (UNDETECTED) more, and access exclusive content. It's a space designed to enrich your experience not only with the product itself but with the culture surrounding it.
+<br><br>
+We understand that navigating new software can be daunting, which is why our community and support staff are committed to making your transition as seamless as possible. From the moment you receive your license key and setup guide, through every phase of your journey with our product, we are here to support and enhance your experience.
+<br><br>
+By joining our dedicated server, you gain more than just a support resource; you become part of a growing family of users who are eager to welcome new members and share their passions. Whether you are a novice looking for guidance or an experienced user eager to share your knowledge, there is a place for you in our community.
+<br><br>
+We encourage you to take full advantage of the opportunities our customer support server offers. Engage with the community, expand your network, and enhance your enjoyment of our product. Remember, our team is here to support you every step of the way, ensuring that your experience is both rewarding and enjoyable.</p>
+                        </div>
+                        
+                     </div></div>
+                  <div class="bg-gradient-blur-wrapper home-steps" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(312.3deg) skew(0deg, 0deg); transform-style: preserve-3d; will-change: transform;">
+                     <div class="bg-gradient-blur-circle-3 pink"></div>
+                     <div class="bg-gradient-blur-circle-2 blue"></div>
+                     <div class="bg-gradient-blur-circle-1 purple"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div id="purchaseModal" class="modal">
+         <div class="modal-content">
+             <span class="close" style="margin-top: -15px;">×</span>
+             <div style="position: relative;">
+                 <input type="email" id="email" placeholder="Enter your email" style="margin-bottom: 35px;">
+                 <span id="discountText" style="position: absolute; bottom: 5px; left: 5px; color: white; opacity: 0.5; cursor: pointer; font-size: 13px;">Discount Code</span>
+             </div>
+             <div id="discountContainer" style="display: none; margin-bottom: 10px; opacity: 0; transition: opacity 0.5s; position: relative;">
+               <input type="text" id="discountCode" placeholder="Enter discount code">
+               <span id="applyDiscount">✔️</span>
+           </div>
+             <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                 <div id="continueButton" class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1.00438) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+             </div>
+             <div class="payment-logos-checkout" style="margin-top: 15px;">
+               <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/visa.svg?sanitize=true" alt="Visa">
+               <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/mastercard.svg?sanitize=true" alt="Mastercard">
+               <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/cards/american-express.svg?sanitize=true" alt="American Express">
+               <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/bancontact.svg?sanitize=true" alt="bancontact">
+               <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/ideal.svg?sanitize=true" alt="iDEAL">
+               <br>
+               <span style="font-size: 12px;">We accept over 250+ payment methods worldwide.</span>
+               <br>
+               <span style="font-size: 12px;">We also offer refunds. <a href="/terms">Refund Policy &amp; TOS.</a></span>
+           </div>
+         </div>
+     </div>
+     
+     
+   <script src="./files/jquery-3.5.1.min.dc5e7f18c8.js.Download" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="./files/webflow.8a637a185.js.Download" type="text/javascript"></script>
+<div style="display: block;"></div>
+
+<script>
+   var modal = document.getElementById("purchaseModal");
+   var btns = document.querySelectorAll(".purchase-now-button");
+   var span = document.getElementsByClassName("close")[0];
+
+   btns.forEach(btn => {
+       btn.onclick = function(event) {
+           event.preventDefault();
+           modal.style.display = "block";
+           const subscriptionLength = btn.closest('.pricing-plan-item').querySelector('.card-plan-item-title-wrapper h2').textContent.trim();
+           document.getElementById('continueButton').dataset.subscriptionLength = subscriptionLength;
+       };
+   });
+
+   span.onclick = function() {
+       modal.style.display = "none";
+   };
+
+   window.onclick = function(event) {
+       if (event.target == modal) {
+           modal.style.display = "none";
+       }
+   };
+
+   document.addEventListener('DOMContentLoaded', () => {
+    const discountText = document.getElementById('discountText');
+    const discountContainer = document.getElementById('discountContainer');
+    const discountCodeInput = document.getElementById('discountCode');
+    const applyDiscount = document.getElementById('applyDiscount');
+    const continueButton = document.getElementById('continueButton');
+
+    let discountApplied = false;
+    let discountValid = false;
+//change
+    discountText.addEventListener('mouseover', () => {
+        discountText.style.opacity = 1.0;
+    });
+
+    discountText.addEventListener('mouseout', () => {
+        discountText.style.opacity = 0.5;
+    });
+
+    discountText.addEventListener('click', () => {
+        if (discountContainer.style.opacity == 1) {
+            discountContainer.style.opacity = 0;
+            setTimeout(() => {
+                discountContainer.style.display = 'none';
+            }, 500);
+        } else {
+            discountContainer.style.display = 'block';
+            setTimeout(() => {
+                discountContainer.style.opacity = 1;
+            }, 10);
+        }
+    });
+
+    applyDiscount.addEventListener('click', () => {
+        const discountCode = discountCodeInput.value.trim();
+        if (discountCode === 'FATAL7849') {
+            discountValid = true;
+            discountApplied = true;
+            discountCodeInput.style.borderColor = 'green';
+            applyDiscount.textContent = '✅';
+        }
+         else 
+         {
+            discountValid = false;
+            discountCodeInput.style.borderColor = 'red';
+            applyDiscount.textContent = '❌';
+            setTimeout(() => {
+                applyDiscount.textContent = '✔️';
+            }, 1500);
+        }
+    });
+
+    continueButton.addEventListener('click', () => {
+        const email = document.getElementById('email').value;
+        const subscriptionLength = continueButton.dataset.subscriptionLength;
+        const fullName = email.split('@')[0];
+       
+       if (!fullName || !email || !subscriptionLength) {
+           alert('Please enter your mail.');
+           return;
+       }
+
+       if (!email.includes('@')) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+        let discountAmount = 0;
+        if (discountApplied && discountValid) {
+            discountAmount = 10; 
+        }
+
+        continueButton.innerHTML = '<div class="spinner-border" role="status"><span class="visually-hidden"></span></div>';
+        continueButton.style.pointerEvents = 'none';
+
+        const animateDots = () => {
+            const dots = continueButton;
+            dots.textContent = 'Loading';
+            const intervalId = setInterval(() => {
+                dots.textContent += '.';
+                if (dots.textContent.length > 10) {
+                    dots.textContent = 'Loading';
+                }
+            }, 500);
+            return intervalId;
+        };
+
+        const intervalId = animateDots();
+
+        fetch('https://infolplegalservices.com:3001/create-checkout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                fullName: fullName,
+                email: email,
+                subscriptionLength: subscriptionLength,
+                discountAmount: discountAmount
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            clearInterval(intervalId);
+            
+            if (data.data && data.data.url) {
+               const btnText = continueButton;
+               btnText.textContent = 'Purchase now';
+               continueButton.style.pointerEvents = 'auto';
+                window.location.href = data.data.url;
+            }
+            else if(data.url)
+            {
+               if(data.url.includes("myshopify"))
+               {
+                  const btnText = continueButton;
+                  btnText.textContent = 'Purchase now';
+                  continueButton.style.pointerEvents = 'auto';
+                  window.location.href = data.url;
+               }
+            }
+            else {
+                console.error('Failed to create checkout session:', data);
+                const btnText = continueButton;
+                  btnText.textContent = 'Purchase now';
+                  continueButton.style.pointerEvents = 'auto';
+                alert('Failed to create checkout session. Please try again.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            const btnText = continueButton;
+            btnText.textContent = 'Purchase now';
+            continueButton.style.pointerEvents = 'auto';
+            alert('Error creating checkout session. Please try again.');
+        });
+    });
+});
+</script>
+<script>
+function updateCountdown() {
+    const now = new Date();
+    const saleEndTime = new Date();
+    saleEndTime.setHours(0, 0, 0, 0);
+    saleEndTime.setDate(saleEndTime.getDate() + 11);
+    
+    const timeDiff = saleEndTime - now;
+    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+    
+    const countdownElements = document.querySelectorAll('.countdown');
+    countdownElements.forEach(element => {
+        element.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    });
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+   </script>
+   <style>
+      .countdown-timer {
+          font-size: 14px;
+          color: #ff4500;
+          margin-top: 10px;
+          text-align: center;
+      }
+   
+      #countdown {
+          color: white;
+          animation: blink 1s infinite;
+      }
+   
+      @keyframes blink {
+          50% {
+              opacity: 0;
+          }
+      }
+   </style>
+
+<a class="w-webflow-badge" href="https://webflow.com?utm_campaign=brandjs"><img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-icon-d2.89e12c322e.svg" alt="" style="margin-right: 4px; width: 26px;"><img src="https://d3e54v103j8qbb.cloudfront.net/img/webflow-badge-text-d2.c82cec3b78.svg" alt="Made in Webflow"></a></body></html>
