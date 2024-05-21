@@ -436,7 +436,7 @@
                            <div class="card-plan-item-button-wrapper">
                               <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
                               <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                                 <div id="MonthPurchaseButton" class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
                               </div>
                               <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
                            </div>
@@ -497,7 +497,7 @@
                            <div class="card-plan-item-button-wrapper">
                               <div class="button-secondary small plan w-condition-invisible" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; background-color: rgb(48, 44, 63); color: rgb(255, 255, 255);">Get started</div>
                               <div class="button-primary-gradient full-width plan" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
-                                 <div class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
+                                 <div id="LifetimePurchaseButton" class="button-primary small pointer-cursor" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">Purchase now</div>
                               </div>
                               <div class="paragraph-small card-plan-item-content-bottom-small-print">Card &amp; bank payments available</div>
                            </div>
@@ -733,15 +733,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Functionality for purchase buttons
     var DDayBtn = document.getElementById("3DaysPurchaseButton");
     var WeekBtn = document.getElementById("WeekPurchaseButton");
+    var MonthBtn = document.getElementById("MonthPurchaseButton");
+    var LifetimeBTN = document.getElementById("LifetimePurchaseButton");
 
     DDayBtn.onclick = function(event) {
         event.preventDefault();
-        window.location.href = 'https://buy.stripe.com/9AQ151eNl08FarKaEI';
+        window.location.href = 'https://Soon';
     };
 
     WeekBtn.onclick = function(event) {
         event.preventDefault();
-        window.location.href = 'https://buy.stripe.com/bIYdRNfRp3kRgQ8149';
+        window.location.href = 'https://Soon';
+    };
+        
+    MonthBtn.onclick = function(event) {
+        event.preventDefault();
+        window.location.href = 'https://Soon';
+    };
+
+    LifetimeBtn.onclick = function(event) {
+        event.preventDefault();
+        window.location.href = 'https://Soon';
     };
         
     const discountText = document.getElementById('discountText');
